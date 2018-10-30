@@ -14,5 +14,17 @@ public class Account extends Person{
 		
 	}
 	
+	public String setFirstName(String name) {
+		super.firstName = name;
+		return "Name has been changed";
+	}
+	
+	public String getName() {
+		return super.firstName + " " + super.lastName;
+	}
+	public String getAccountNumber() {
+		return super.accountNumber;
+	}
+	
 	
 }
