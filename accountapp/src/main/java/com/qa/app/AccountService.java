@@ -26,5 +26,9 @@ public class AccountService {
 		System.out.println(objmap.writeValueAsString(accountsMap.values()));
 		return "Done";
 	}
+
+	public int getSum(String firstname) {
+		return (int) accountsMap.values().stream().filter(i->i.getFirstName().equals(firstname)).count();
+	}
 	
 }
