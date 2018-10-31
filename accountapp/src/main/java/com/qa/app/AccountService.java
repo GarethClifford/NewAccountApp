@@ -28,16 +28,7 @@ public class AccountService {
 	}
 
 	public int getSum(String firstname) {
-		int sum = 0;
-		for (Account a : accountsMap.values()) {
-			if(a.firstName.equals(firstname)) {
-			sum++;
-			}
-		}
-		
-		
-		
-		return sum;
+		return (int) accountsMap.values().stream().filter(i->i.getFirstName().equals(firstname)).count();
 	}
 	
 }
