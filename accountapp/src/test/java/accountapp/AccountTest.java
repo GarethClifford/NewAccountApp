@@ -1,6 +1,6 @@
 package accountapp;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -17,9 +17,9 @@ public class AccountTest {
 		service.addAccount("Ben", "Taylor","125");
 				
 		
-		assert.assertEquals(2, service.getSum("Gareth"));
-		assert.assertEquals(1, service.getSum("Ben"));
-		assert.assertEquals(0, service.getSum("Andrew"));
+		assertEquals(2, service.getSum("Gareth"));
+		assertEquals(1, service.getSum("Ben"));
+		assertEquals(0, service.getSum("Andrew"));
 	}
 
 }
