@@ -1,8 +1,8 @@
 package com.qa.app;
 
+
 public class Account extends Person{
 
-	
 	public Account() {
 		
 	}
